@@ -23,12 +23,18 @@ router.get('/:id', (req, res, next) => {
 router.post('/', (req, res, next) => {
     db.create(req.body)
     .then(() => res.sendStatus(201))
-    .catch(err => next(err))
+    
 })
 
 
 // Create the route for updating
+router.put('/:id', (req, res, next) => {
+    const id = req.params.id
 
+db.update(id, req.body)
+    .then(()  => res.sendStatus(200))
+    .catch(err => next(err))
+})
 
 // Route for deleting an item
 
