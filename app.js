@@ -9,7 +9,6 @@ var index = require('./routes/index');
 var cartoons = require('./routes/cartoons');
 
 var app = express();
-require('dotenv').config()
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
