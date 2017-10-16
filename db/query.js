@@ -1,7 +1,6 @@
 var db = require('./connection');
-const environment = process.env.NODE_ENV || 'development’
 
-const config = require('../knexfile.js')[environment]
+
 function getAll() {
 	// Get all cartoons and return them to the route
 	return db.select('*').from('cartoon')
