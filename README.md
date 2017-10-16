@@ -7,8 +7,6 @@
 - `createdb cartoons`
 - `knex migrate:latest`
 - `knex seed:run`
-- adding something
-- hey
 
 ### Instructions
 
